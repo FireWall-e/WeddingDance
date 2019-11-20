@@ -280,35 +280,35 @@ i {
     text-transform: none;
 }
 
-.offers-list__icon_rooms:before {
-    content: "\E001";
-}
-
-.offers-list__icon_form:before {
-    content: "\E002";
-}
-
-.offers-list__icon_star:before {
-    content: "\E003";
-}
-
-.offers-list__icon_coop:before {
-    content: "\E004";
-}
-
-.offers-list__icon_fun:before {
+.offers-list__icon_photo:before {
     content: "\E005";
 }
 
-.offers-list__icon_food:before {
-    content: "\E006";
-}
-
-.offers-list__icon_coaches:before {
+.offers-list__icon_form:before {
     content: "\E007";
 }
 
-.offers-list__icon_photo:before {
+.offers-list__icon_star:before {
+    content: "\E006";
+}
+
+.offers-list__icon_coop:before {
+    content: "\E001";
+}
+
+.offers-list__icon_fun:before {
+    content: "\E002";
+}
+
+.offers-list__icon_food:before {
+    content: "\E003";
+}
+
+.offers-list__icon_coaches:before {
+    content: "\E004";
+}
+
+.offers-list__icon_rooms:before {
     content: "\E008";
 }
 
@@ -320,7 +320,7 @@ i {
     color: #FFF;
 }
 
-@media only screen and (device-width : 375px) {
+@media screen and (device-width : 375px) {
 
     body {
         font-size: 13px;
