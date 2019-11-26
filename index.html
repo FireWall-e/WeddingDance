@@ -117,7 +117,7 @@
                 </div>
                 <div class="offers-list__item">
                     <i class="offers-list__icon offers-list__icon_fun"></i>
-                    <span class="offers-list__text">Exciting emotions  and a lot of fun</span>
+                    <span class="offers-list__text">Exciting emotions and a lot of fun</span>
                 </div>
                 <div class="offers-list__item">
                     <i class="offers-list__icon offers-list__icon_photo"></i>
@@ -163,7 +163,7 @@
                 lastX;
 
             const S = function (o) {
-                if (!o.slider || o.widthCondition < window.innerWidth) return;
+                if (!o.slider || o.widthCondition < window.outerWidth) return;
                 slider = o.slider;
                 slider.classList.add('sli-der');
                 sliderWidth = slider.scrollWidth;
@@ -230,7 +230,7 @@
         })();
 
         new Sli({
-            slider: document.getElementsByClassName('services-list')[0],
+            slider: document.querySelector('.services-list'),
             dots: {
                 position: ['afterend']
             },

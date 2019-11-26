@@ -71,8 +71,8 @@ i {
     align-items: center;
 }
 
-.header-menu_desktop {
-    column-gap: 24px;
+.header-menu__item:nth-child(even) {
+    margin:0 24px;
 }
 
 .header-menu_phone {
@@ -192,7 +192,6 @@ i {
 
 .services-list {
     display: flex;
-    column-gap: 16px;
 }
 
 .services-list__item {
@@ -203,6 +202,10 @@ i {
     box-sizing: border-box;
     box-shadow: 0px 4px 30px rgba(207, 207, 207, 0.25);
     border-radius: 2px;
+}
+
+.services-list__item:nth-child(even) {
+    margin: 0 16px;
 }
 
 .services-item__image {
@@ -234,12 +237,15 @@ i {
     line-height: 25px;
 }
 
+.offers {
+    margin-bottom: 40px;
+}
+
 .offers-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     text-align: center;
-    row-gap: 60px;
 }
 
 .offers-list__item {
@@ -247,6 +253,7 @@ i {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 60px;
 }
 
 .offers-list__icon {
@@ -347,7 +354,6 @@ i {
         flex-direction: column;
         align-items: start;
         background-color: #FFF;
-        row-gap: 24px;
         padding: 15px 17px 37px;
         box-shadow: rgba(0, 0, 0, 0.4) -10px 3px 12px -4px;
     }
@@ -369,6 +375,10 @@ i {
         opacity: 1;
         pointer-events: auto;
         display: flex;
+    }
+
+    .header-menu__item:nth-child(even) {
+        margin:24px 0;
     }
 
     .header-button {
@@ -442,15 +452,12 @@ i {
     }
 
     .offers {
-        margin-bottom: 42px;
-    }
-
-    .offers-list {
-        row-gap: 32px;
+        margin-bottom: 10px;
     }
     
     .offers-list__item {
-        flex-basis: 50%;
+        flex-basis: 40%;
+        margin-bottom: 32px;
     }
 
     .offers-list__icon {
@@ -497,14 +504,13 @@ i {
     }
 
     .sli-der {
-            transition: 1s;
+        transition: 1s;
     }
 
     .sli-dots {
         display: flex;
         align-items: center;
         justify-content: center;
-        column-gap: 4px;
         margin-top: 12px;
         transition: 1s;
     }
@@ -517,6 +523,10 @@ i {
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
+    }
+
+    .sli-dot:nth-child(even) {
+        margin: 0 4px;
     }
 
     .sli-dot.selected {
