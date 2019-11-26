@@ -2,10 +2,6 @@ body, h1, h2, h3, p {
     margin: 0;
 }
 
-body {
-    overflow-x: hidden;
-}
-
 body,
 button {
     font-family: 'Montserrat', sans-serif;
@@ -117,9 +113,12 @@ i {
 .main {
     display: flex;
     flex-direction: column;
+    padding: 0;
 }
 
 .main__block {
+    padding: 0 72px;
+    box-sizing: border-box;
     margin-bottom: 100px;
 }
 
@@ -188,6 +187,10 @@ i {
 .main-block__description {
     line-height: 25px;
     margin: 24px 0 48px;
+}
+
+.services {
+    overflow: hidden;
 }
 
 .services-list {
@@ -334,11 +337,11 @@ i {
     }
 
     .body__block {
-        padding-left: 16px;
-        padding-right: 16px;    
+        padding: 0 16px;  
     }
 
     .main__block {
+        padding: 0 16px;
         margin-bottom: 56px;
     }
 
@@ -354,6 +357,7 @@ i {
         flex-direction: column;
         align-items: start;
         background-color: #FFF;
+        box-sizing: border-box;
         padding: 15px 17px 37px;
         box-shadow: rgba(0, 0, 0, 0.4) -10px 3px 12px -4px;
     }
@@ -385,6 +389,10 @@ i {
         width: 116px;
         margin-left: 0;
         margin-top: 16px;
+    }
+
+    .main {
+        padding: 0;
     }
 
     .intro-article {
@@ -420,6 +428,7 @@ i {
     .intro-image {
         height: 275px;
         margin: 0 -16px;
+
     }
 
     .main-block__title {
