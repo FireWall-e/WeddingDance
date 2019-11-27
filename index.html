@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>Wedding Dance</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto&display=swap" rel="stylesheet"> 
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 </head>
 <body class="body">
         <header class="header body__block">
@@ -47,13 +51,15 @@
             <span class="intro-image"></span>
         </section>
         <section class="main__block main-block services">
-            <div class="main-block__text">
+            <div class="main-block__text wow fadeInUp">
                 <h2 class="main-block__title">Our Services</h2>
                 <p class="main-block__description">
                     We want to make your wedding day perfect that is why suggest a lot of options for dance: not only for a bride and groom but for their friends and relatives
                 </p>
             </div>
-            <div class="services-list">
+            <div class="services-list wow fadeInLeft"
+                 data-wow-duration="1.3s"
+                 data-wow-delay=".45s">
                 <div class="services-list__item for-bride-n-groom">
                     <img class="services-item__image" src="image/services/for-bride-n-groom-s.jpg"></img>
                     <div class="services-item__info services-info">
@@ -88,7 +94,7 @@
             </div>
         </section>
         <section class="main__block main-block offers">
-            <div class="main-block__text">
+            <div class="main-block__text wow fadeInUp">
                 <h2 class="main-block__title">What we offer</h2>
                 <p class="main-block__description">
                     Our goal is not only to teach you how to dance but also give the best unforgettable memories about preparing to your event
@@ -96,35 +102,35 @@
             </div>
             <div class="offers-list">
                 <div class="offers-list__item">
-                    <i class="offers-list__icon offers-list__icon_coaches"></i>
+                    <i class="offers-list__icon offers-list__icon_coaches wow zoomIn"></i>
                     <span class="offers-list__text">Talented Coaches</span>
                 </div>
                 <div class="offers-list__item">
-                    <i class="offers-list__icon offers-list__icon_rooms"></i>
+                    <i class="offers-list__icon offers-list__icon_rooms wow zoomIn"></i>
                     <span class="offers-list__text">Cozy rooms for training</span>
                 </div>
                 <div class="offers-list__item">
-                    <i class="offers-list__icon offers-list__icon_food"></i>
+                    <i class="offers-list__icon offers-list__icon_food wow zoomIn"></i>
                     <span class="offers-list__text">Coffee, tea, and cookies</span>
                 </div>
                 <div class="offers-list__item">
-                    <i class="offers-list__icon offers-list__icon_form"></i>
+                    <i class="offers-list__icon offers-list__icon_form wow zoomIn"></i>
                     <span class="offers-list__text">Good physical form</span>
                 </div>
                 <div class="offers-list__item">
-                    <i class="offers-list__icon offers-list__icon_star"></i>
+                    <i class="offers-list__icon offers-list__icon_star wow zoomIn"></i>
                     <span class="offers-list__text">Self Confidence and success on your event</span>
                 </div>
                 <div class="offers-list__item">
-                    <i class="offers-list__icon offers-list__icon_fun"></i>
+                    <i class="offers-list__icon offers-list__icon_fun wow zoomIn"></i>
                     <span class="offers-list__text">Exciting emotions and a lot of fun</span>
                 </div>
                 <div class="offers-list__item">
-                    <i class="offers-list__icon offers-list__icon_photo"></i>
+                    <i class="offers-list__icon offers-list__icon_photo wow zoomIn"></i>
                     <span class="offers-list__text">Great photos from your event</span>
                 </div>
                 <div class="offers-list__item">
-                    <i class="offers-list__icon offers-list__icon_coop"></i>
+                    <i class="offers-list__icon offers-list__icon_coop wow zoomIn"></i>
                     <span class="offers-list__text">Spend hours together in happiness</span>
                 </div>
             </div>
@@ -236,6 +242,8 @@
             },
             widthCondition: 375
         });
+
+        new WOW().init();
 
         function toggleMenu (b) {
             document.getElementsByClassName('header-menu_desktop')[0].classList.toggle('show');
