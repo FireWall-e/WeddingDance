@@ -329,54 +329,54 @@ i {
     margin: 24px 0 48px;
 }
 
-.services {
+.service {
     overflow: hidden;
 }
 
-.services-list {
+.service-list {
     display: flex;
 }
 
-.services-list__item {
+.service-list__item {
     display: flex;
     flex-direction: column;
     width: 33%;
     border: 1px solid rgba(0, 0, 0, 0.04);
     box-sizing: border-box;
-    box-shadow: 0px 4px 30px rgba(207, 207, 207, 0.25);
+    box-shadow: 0px 4px 10px rgba(207, 207, 207, 0.25);
     border-radius: 2px;
 }
 
-.services-list__item:nth-child(even) {
+.service-list__item:nth-child(even) {
     margin: 0 16px;
 }
 
-.services-item__image {
+.service-item__image {
     width: 100%;
 }
 
-.services-info {
+.service-info {
     padding: 40px 0 40px 40px;
     box-sizing: border-box;
 }
 
-/*.for-bride-n-groom .services-info {
+/*.for-bride-n-groom .service-info {
     padding-left: 24px;
 }*/
 
-.services-info__title {
+.service-info__title {
     font-weight: bold;
     font-size: 24px;
 }
 
-.services-info__list {
+.service-info__list {
     list-style-type: none;
     padding: 0;
     margin-top: 24px;
 }
 
-.services-info__item {
-    margin-bottom: 8px;
+.services__item {
+    margin-top: 8px;
     line-height: 25px;
 }
 
@@ -579,19 +579,19 @@ i {
         margin: 12px 0 32px;
     }
 
-    .services-list__item {
+    .service-list__item {
         min-width: 285px;
     }
 
-    .services-info {
+    .service-info {
         padding: 24px 0 32px 16px;
     }
 
-    .services-info__title {
+    .service-info__title {
         font-size: 18px;
     }
 
-    .services-info__list {
+    .service-info__list {
         margin-top: 16px;
     }
 
